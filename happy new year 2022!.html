@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        div {
+            border-radius: 50%;
+            object-fit: cover;
+            height: 416px;
+            width: 416px;
+            transform: translate(500px, 200px);
+            position: relative;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            border: 1px ridge black;
+            color: rgb(0, 17, 255);
+            text-align: center;
+            background-image: url(new_year.jpeg);
+            animation-timing-function: linear
+        }
+
+        @keyframes example {
+           0% {transform: translate(0px, 200px);}
+           25% {transform: translate(500px, 200px);}
+           50% {transform: translate(851px, 200px);}
+           75% {transform: translate(500px, 200px);}
+           100% {transform: translate(0px, 200px);}
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1>Happy New Year!</h1>
+    <div>
+        <h1><br><br><i>Happy New Year 2022!</i></h1>
+    </div>
+</body>
+
+</html>
