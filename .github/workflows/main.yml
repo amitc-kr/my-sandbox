@@ -1,0 +1,12 @@
+name: My PR Test
+
+on:
+  pull_request:
+    types: opened
+    
+jobs:
+  build_and_deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Echo something
+        run: echo 'Hello World'
